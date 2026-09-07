@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.venv/
+.env
+.env.*
+auth.json
+private/
+*.sqlite
+*.sqlite-*

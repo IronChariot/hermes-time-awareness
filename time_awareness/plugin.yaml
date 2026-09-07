@@ -1,0 +1,9 @@
+name: time_awareness
+version: 0.1.0
+kind: standalone
+description: System-tagged local time and conversation-gap context after a quiet interval. No tools or network calls.
+provides_tools: []
+provides_hooks:
+  - pre_llm_call
+  - post_llm_call
+  - on_session_end
