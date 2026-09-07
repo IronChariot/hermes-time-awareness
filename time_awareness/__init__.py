@@ -226,3 +226,5 @@ def register(ctx):
     ctx.register_hook('pre_llm_call', hooks.pre_llm_call)
     ctx.register_hook('post_llm_call', hooks.post_llm_call)
     ctx.register_hook('on_session_end', hooks.on_session_end)
+    logger.info('Time awareness enabled: timezone=%s threshold_minutes=%s scope=%s platforms=%s',
+                settings.timezone, settings.threshold_minutes, settings.scope, ','.join(settings.platforms))
